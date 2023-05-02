@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Test");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Test2");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Test3");
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Center);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.recipeCategories = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.Recipe = new System.Windows.Forms.ColumnHeader();
             this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.btnAddRecipe = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -59,33 +55,34 @@
             this.label1.Size = new System.Drawing.Size(150, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reseptit";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // recipeCategories
             // 
             this.recipeCategories.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup2.Name = "listViewGroup1";
-            listViewGroup2.Subtitle = "asd";
+            this.Recipe});
+            this.recipeCategories.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.recipeCategories.FullRowSelect = true;
+            this.recipeCategories.GridLines = true;
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup1.Subtitle = "asd";
             this.recipeCategories.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup2});
-            this.recipeCategories.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4,
-            listViewItem5,
-            listViewItem6});
+            listViewGroup1});
             this.recipeCategories.Location = new System.Drawing.Point(0, 84);
             this.recipeCategories.Name = "recipeCategories";
+            this.recipeCategories.ShowGroups = false;
             this.recipeCategories.Size = new System.Drawing.Size(344, 195);
             this.recipeCategories.TabIndex = 1;
+            this.recipeCategories.TileSize = new System.Drawing.Size(48, 48);
             this.recipeCategories.UseCompatibleStateImageBehavior = false;
-            this.recipeCategories.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.recipeCategories.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
+            // Recipe
             // 
-            this.columnHeader1.Tag = "Test1";
+            this.Recipe.Tag = "Test1";
+            this.Recipe.Text = "Recipe";
+            this.Recipe.Width = 300;
             // 
             // txtRecipeName
             // 
@@ -128,8 +125,7 @@
         private Panel panel1;
         private Label label1;
         private ListView recipeCategories;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
+        private ColumnHeader Recipe;
         private TextBox txtRecipeName;
         private Button btnAddRecipe;
     }

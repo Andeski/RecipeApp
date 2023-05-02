@@ -9,17 +9,11 @@ namespace RecipeApp
         //TESTI TESTI
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            recipeCategories.Items.Add("Pekkaramaruna");
+            recipeCategories.Items.Add("Soppa");
+            recipeCategories.Items.Add("Magaroonilaadikko");
+            recipeCategories.Items.Add("Parasetamoli");
+            recipeCategories.Items.Add("Fentanyylitikkari");
         }
     }
 }
