@@ -12,7 +12,11 @@ namespace RecipeApp
         //TESTI TESTI
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            recipeCategories.Items.Add("Pekkaramaruna");
+            recipeCategories.Items.Add("Soppa");
+            recipeCategories.Items.Add("Magaroonilaadikko");
+            recipeCategories.Items.Add("Parasetamoli");
+            recipeCategories.Items.Add("Fentanyylitikkari");
         }
 
         private void BtnHae(object sender, EventArgs e)

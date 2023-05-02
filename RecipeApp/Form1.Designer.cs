@@ -28,17 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Test");
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.recipeCategories = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.Recipe = new System.Windows.Forms.ColumnHeader();
             this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.btnAddRecipe = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,48 +59,47 @@
             // recipeCategories
             // 
             this.recipeCategories.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
+            this.Recipe});
+            this.recipeCategories.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.recipeCategories.FullRowSelect = true;
+            this.recipeCategories.GridLines = true;
             listViewGroup1.Header = "ListViewGroup";
             listViewGroup1.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             listViewGroup1.Name = "listViewGroup1";
             listViewGroup1.Subtitle = "asd";
             this.recipeCategories.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1});
-            this.recipeCategories.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
             this.recipeCategories.Location = new System.Drawing.Point(0, 84);
             this.recipeCategories.Name = "recipeCategories";
-            this.recipeCategories.Size = new System.Drawing.Size(344, 195);
+            this.recipeCategories.ShowGroups = false;
+            this.recipeCategories.Size = new System.Drawing.Size(344, 476);
             this.recipeCategories.TabIndex = 1;
+            this.recipeCategories.TileSize = new System.Drawing.Size(48, 48);
             this.recipeCategories.UseCompatibleStateImageBehavior = false;
+            this.recipeCategories.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
+            // Recipe
             // 
-            this.columnHeader1.Tag = "Test1";
+            this.Recipe.Tag = "Test1";
+            this.Recipe.Text = "Recipe";
+            this.Recipe.Width = 300;
             // 
             // txtRecipeName
             // 
-            this.txtRecipeName.Location = new System.Drawing.Point(7, 295);
+            this.txtRecipeName.Location = new System.Drawing.Point(12, 566);
             this.txtRecipeName.Name = "txtRecipeName";
-            this.txtRecipeName.PlaceholderText = "Hae reseptiä...";
+            this.txtRecipeName.PlaceholderText = "Tee uusi resepti...";
             this.txtRecipeName.Size = new System.Drawing.Size(239, 23);
             this.txtRecipeName.TabIndex = 2;
             // 
             // btnAddRecipe
             // 
-            this.btnAddRecipe.Location = new System.Drawing.Point(252, 295);
+            this.btnAddRecipe.Location = new System.Drawing.Point(257, 566);
             this.btnAddRecipe.Name = "btnAddRecipe";
             this.btnAddRecipe.Size = new System.Drawing.Size(75, 23);
             this.btnAddRecipe.TabIndex = 3;
-            this.btnAddRecipe.Text = "Hae";
+            this.btnAddRecipe.Text = "Find";
             this.btnAddRecipe.UseVisualStyleBackColor = true;
-            this.btnAddRecipe.Click += new System.EventHandler(this.BtnHae);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -130,10 +125,8 @@
         private Panel panel1;
         private Label label1;
         private ListView recipeCategories;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
+        private ColumnHeader Recipe;
         private TextBox txtRecipeName;
         private Button btnAddRecipe;
-        private ContextMenuStrip contextMenuStrip1;
     }
 }
