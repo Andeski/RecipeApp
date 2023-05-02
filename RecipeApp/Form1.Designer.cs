@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Center);
             System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Test");
             System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Test2");
@@ -39,6 +40,7 @@
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.btnAddRecipe = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +83,6 @@
             this.recipeCategories.Size = new System.Drawing.Size(344, 195);
             this.recipeCategories.TabIndex = 1;
             this.recipeCategories.UseCompatibleStateImageBehavior = false;
-            this.recipeCategories.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -103,6 +104,11 @@
             this.btnAddRecipe.TabIndex = 3;
             this.btnAddRecipe.Text = "Lähetä";
             this.btnAddRecipe.UseVisualStyleBackColor = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -132,5 +138,6 @@
         private ColumnHeader columnHeader2;
         private TextBox txtRecipeName;
         private Button btnAddRecipe;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }
