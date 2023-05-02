@@ -2,6 +2,9 @@
   "foods": [
     {
       "name": "Roasted Chicken",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "1 whole chicken",
         "2 tbsp olive oil",
@@ -22,6 +25,9 @@
     },
     {
       "name": "Beef Tacos",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "1 lb ground beef",
         "8 corn tortillas",
@@ -46,6 +52,9 @@
     },
     {
       "name": "Caprese Salad",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "2 large tomatoes, sliced",
         "8 oz fresh mozzarella cheese, sliced",
@@ -65,11 +74,15 @@
     },
     {
       "name": "Pesto Pasta",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "8 oz pasta",
         "1/2 cup pesto sauce",
         "1/2 cup grated Parmesan cheese",
         "1/4 cup chopped fresh parsley",
+       
         "1/4 tsp salt",
         "1/4 tsp black pepper"
       ],
@@ -80,5 +93,139 @@
         "Warm pasta over low heat, stirring frequently, until sauce is heated through and cheese is melted, about 3-5 minutes.",
         "Serve pasta topped with chopped parsley."
       ]
-    }
+      "name": "Banana Pancakes",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
+      "ingredients": [
+        "1 ripe banana, mashed",
+        "1 egg",
+        "1/4 cup milk",
+        "1/2 cup flour",
+        "1 tsp baking powder",
+        "1/4 tsp salt",
+        "1/4 tsp cinnamon",
+        "1 tbsp butter, melted"
+      ],
+      "instructions": [
+        "In a medium bowl, whisk together mashed banana, egg, and milk.",
+        "In a separate bowl, mix together flour, baking powder, salt, and cinnamon.",
+        "Add dry ingredients to the banana mixture and stir until just combined.",
+        "Melt butter in a nonstick skillet over medium heat.",
+        "Pour pancake batter onto the skillet in 1/4-cup portions.",
+        "Cook pancakes for 2-3 minutes on each side, until golden brown.",
+        "Serve pancakes warm with maple syrup and additional sliced bananas, if desired."
+      ]
+    },
+    {
+      "name": "Breakfast Burrito",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
+      "ingredients": [
+        "4 large eggs",
+        "1/4 cup milk",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "2 tbsp butter",
+        "4 flour tortillas",
+        "1/2 cup shredded cheddar cheese",
+        "1/4 cup salsa",
+        "1/4 cup chopped fresh cilantro"
+      ],
+      "instructions": [
+        "In a medium bowl, whisk together eggs, milk, salt, and black pepper.",
+        "Melt butter in a large skillet over medium heat.",
+        "Add egg mixture to the skillet and cook, stirring frequently, until scrambled and cooked through, about 3-5 minutes.",
+        "Warm tortillas in the microwave for 15-20 seconds.",
+        "To assemble burritos, divide scrambled eggs among the tortillas.",
+        "Top each with shredded cheese, salsa, and chopped cilantro.",
+        "Roll up tortillas and serve immediately."
+      ]
+    },
+    {
+      "name": "Avocado Toast",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
+      "ingredients": [
+        "2 slices whole wheat bread",
+        "1 ripe avocado, mashed",
+        "1/4 tsp garlic powder",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "1 tbsp olive oil",
+        "1/4 tsp red pepper flakes",
+        "2 eggs",
+        "1 tbsp chopped fresh parsley"
+      ],
+      "instructions": [
+        "Toast bread to desired level of crispiness.",
+        "In a small bowl, stir together mashed avocado, garlic powder, salt, and black pepper.",
+        "Spread avocado mixture over toasted bread slices.",
+        "In a small skillet, heat olive oil over medium heat.",
+        "Add red pepper flakes to the skillet and cook for 1-2 minutes.",
+        "Crack eggs into the skillet and cook until desired level of doneness, about 2-3 minutes for over-easy.",
+        "Top each toast with a cooked egg.",
+        "Garnish with chopped parsley and additional red pepper flakes, if desired.",
+        "Serve immediately."
+      ]
+        "name": "Loaded Sweet Potato Fries",
+      "ingredients": [
+        "1 large sweet potato",
+        "1 tbsp olive oil",
+        "1/2 tsp salt",
+        "1/4 tsp black pepper",
+        "1/4 tsp garlic powder",
+        "1/4 tsp smoked paprika",
+        "1/2 cup shredded cheddar cheese",
+        "2 tbsp sliced scallions",
+        "2 tbsp crumbled bacon"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "Peel sweet potato and cut into thin fries.",
+        "In a bowl, toss sweet potato fries with olive oil, salt, black pepper, garlic powder, and smoked paprika.",
+        "Spread fries in a single layer on a baking sheet.",
+        "Bake for 20-25 minutes, until crispy and golden brown.",
+        "Sprinkle cheddar cheese over the hot fries and return to the oven for 2-3 minutes, until cheese is melted.",
+        "Top with sliced scallions and crumbled bacon.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Caprese Skewers",
+      "ingredients": [
+        "1 pint cherry tomatoes",
+        "8 oz fresh mozzarella, cut into bite-sized pieces",
+        "1/4 cup fresh basil leaves",
+        "1 tbsp balsamic glaze",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "8 wooden skewers"
+      ],
+      "instructions": [
+        "Thread cherry tomatoes, fresh mozzarella, and basil leaves onto wooden skewers.",
+        "Drizzle skewers with balsamic glaze and sprinkle with salt and black pepper.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Hummus and Veggie Plate",
+      "ingredients": [
+        "1/2 cup hummus",
+        "1/2 red bell pepper, sliced",
+        "1/2 yellow bell pepper, sliced",
+        "1/2 cucumber, sliced",
+        "1/2 carrot, sliced",
+        "1/4 cup pitted kalamata olives",
+        "1/4 cup feta cheese crumbles"
+      ],
+      "instructions": [
+        "Arrange hummus in a small bowl in the center of a plate.",
+        "Surround the hummus with sliced bell peppers, cucumber, and carrot.",
+        "Sprinkle kalamata olives and feta cheese over the top.",
+        "Serve immediately."
+      ]
+    }]
 }
