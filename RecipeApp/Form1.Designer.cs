@@ -57,7 +57,6 @@
             this.label1.Size = new System.Drawing.Size(150, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reseptit";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listView1
             // 
@@ -79,13 +78,15 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // columnHeader1
+            // Recipe
             // 
-            this.columnHeader1.Tag = "Test1";
+            this.Recipe.Tag = "Test1";
+            this.Recipe.Text = "Recipe";
+            this.Recipe.Width = 300;
             // 
             // txtRecipeName
             // 
-            this.txtRecipeName.Location = new System.Drawing.Point(7, 295);
+            this.txtRecipeName.Location = new System.Drawing.Point(12, 566);
             this.txtRecipeName.Name = "txtRecipeName";
             this.txtRecipeName.PlaceholderText = "Tee uusi resepti...";
             this.txtRecipeName.Size = new System.Drawing.Size(239, 23);
@@ -93,11 +94,11 @@
             // 
             // btnAddRecipe
             // 
-            this.btnAddRecipe.Location = new System.Drawing.Point(252, 295);
+            this.btnAddRecipe.Location = new System.Drawing.Point(257, 566);
             this.btnAddRecipe.Name = "btnAddRecipe";
             this.btnAddRecipe.Size = new System.Drawing.Size(75, 23);
             this.btnAddRecipe.TabIndex = 3;
-            this.btnAddRecipe.Text = "Lähetä";
+            this.btnAddRecipe.Text = "Find";
             this.btnAddRecipe.UseVisualStyleBackColor = true;
             // 
             // Form1
