@@ -52,9 +52,9 @@
             label1.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(173, 18);
             label1.Name = "label1";
-            label1.Size = new Size(150, 47);
+            label1.Size = new Size(140, 47);
             label1.TabIndex = 0;
-            label1.Text = "Reseptit";
+            label1.Text = "Recipes";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // listView1
