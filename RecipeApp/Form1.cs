@@ -6,5 +6,10 @@ namespace RecipeApp
         {
             InitializeComponent();
         }
+        //TESTI TESTI
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
