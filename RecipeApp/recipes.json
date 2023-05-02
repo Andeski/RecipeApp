@@ -2,9 +2,9 @@
   "foods": [
     {
       "name": "Roasted Chicken",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "type": "Dinner",
+      "portions": "4",
+      "difficulty":"2",
       "ingredients": [
         "1 whole chicken",
         "2 tbsp olive oil",
@@ -25,9 +25,9 @@
     },
     {
       "name": "Beef Tacos",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "type": "Dinner",
+      "portions": "6",
+      "difficulty":"3",
       "ingredients": [
         "1 lb ground beef",
         "8 corn tortillas",
@@ -52,9 +52,9 @@
     },
     {
       "name": "Caprese Salad",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "type": "Breakfast",
+      "portions": "2",
+      "difficulty":"1",
       "ingredients": [
         "2 large tomatoes, sliced",
         "8 oz fresh mozzarella cheese, sliced",
@@ -74,9 +74,9 @@
     },
     {
       "name": "Pesto Pasta",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "type": "Lunch",
+      "portions": "4",
+      "difficulty":"1",
       "ingredients": [
         "8 oz pasta",
         "1/2 cup pesto sauce",
@@ -93,10 +93,12 @@
         "Warm pasta over low heat, stirring frequently, until sauce is heated through and cheese is melted, about 3-5 minutes.",
         "Serve pasta topped with chopped parsley."
       ]
+    },
+    {
       "name": "Banana Pancakes",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "type": "Breakfast",
+      "portions": "10",
+      "difficulty":"2",
       "ingredients": [
         "1 ripe banana, mashed",
         "1 egg",
@@ -118,10 +120,10 @@
       ]
     },
     {
-      "name": "Breakfast Burrito",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "name": "Breakfast Burritos",
+      "type": "Breakfast",
+      "portions": "4",
+      "difficulty":"1",
       "ingredients": [
         "4 large eggs",
         "1/4 cup milk",
@@ -145,9 +147,9 @@
     },
     {
       "name": "Avocado Toast",
-      "type": "",
-      "portions": "",
-      "difficulty":"",
+      "type": "Snack",
+      "portions": "1",
+      "difficulty":"1",
       "ingredients": [
         "2 slices whole wheat bread",
         "1 ripe avocado, mashed",
@@ -170,7 +172,12 @@
         "Garnish with chopped parsley and additional red pepper flakes, if desired.",
         "Serve immediately."
       ]
+    },
+    {
         "name": "Loaded Sweet Potato Fries",
+      "type": "Snack",
+      "portions": "2",
+      "difficulty":"3",
       "ingredients": [
         "1 large sweet potato",
         "1 tbsp olive oil",
@@ -195,6 +202,9 @@
     },
     {
       "name": "Caprese Skewers",
+      "type": "Snack",
+      "portions": "6",
+      "difficulty":"1",
       "ingredients": [
         "1 pint cherry tomatoes",
         "8 oz fresh mozzarella, cut into bite-sized pieces",
@@ -212,6 +222,9 @@
     },
     {
       "name": "Hummus and Veggie Plate",
+	  "type": "Lunch",
+      "portions": "2",
+      "difficulty":"1",
       "ingredients": [
         "1/2 cup hummus",
         "1/2 red bell pepper, sliced",
@@ -227,5 +240,6 @@
         "Sprinkle kalamata olives and feta cheese over the top.",
         "Serve immediately."
       ]
+	  }
     }]
 }
