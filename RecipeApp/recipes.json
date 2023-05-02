@@ -2,6 +2,9 @@
   "foods": [
     {
       "name": "Roasted Chicken",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "1 whole chicken",
         "2 tbsp olive oil",
@@ -22,6 +25,9 @@
     },
     {
       "name": "Beef Tacos",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "1 lb ground beef",
         "8 corn tortillas",
@@ -46,6 +52,9 @@
     },
     {
       "name": "Caprese Salad",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "2 large tomatoes, sliced",
         "8 oz fresh mozzarella cheese, sliced",
@@ -65,6 +74,9 @@
     },
     {
       "name": "Pesto Pasta",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "8 oz pasta",
         "1/2 cup pesto sauce",
