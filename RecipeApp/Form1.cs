@@ -7,7 +7,7 @@ namespace RecipeApp
     {
 
         private List<Food> foods;
-
+        AddForm addForm;
         public Form1()
         {   //initialize/subscribe events on load
             InitializeComponent();
@@ -62,21 +62,10 @@ namespace RecipeApp
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public class Food
-        {
-            public string name { get; set; }
-            public List<string> ingredients { get; set; }
-            public List<string> instructions { get; set; }
-        }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         //make text react to click
@@ -126,7 +115,7 @@ namespace RecipeApp
                 string instructions = string.Join(Environment.NewLine, food.instructions);
                 Label instructionsLabel = new Label
                 {
-                    Text = $"Instructions:{Environment.NewLine}{instructions}",
+                    Text = $"\nInstructions:{Environment.NewLine}{instructions}",
                     Dock = DockStyle.Fill,
                     AutoSize = true
                 };
@@ -135,6 +124,13 @@ namespace RecipeApp
                 //add table layout panel to the form
                 Controls.Add(table);
             }
+        }
+
+        //Luo lisäys Formin (uuden ikkunan)
+        private void Add_Click(object sender, EventArgs e)
+        {
+            addForm = new AddForm();
+            addForm.Show();
         }
     }
 }

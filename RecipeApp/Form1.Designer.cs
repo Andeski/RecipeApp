@@ -35,6 +35,7 @@
             txtRecipeName = new TextBox();
             btnAddRecipe = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            Add = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,12 +79,12 @@
             txtRecipeName.Location = new Point(12, 566);
             txtRecipeName.Name = "txtRecipeName";
             txtRecipeName.PlaceholderText = "Find a recipe...";
-            txtRecipeName.Size = new Size(239, 23);
+            txtRecipeName.Size = new Size(186, 23);
             txtRecipeName.TabIndex = 2;
             // 
             // btnAddRecipe
             // 
-            btnAddRecipe.Location = new Point(257, 566);
+            btnAddRecipe.Location = new Point(204, 566);
             btnAddRecipe.Name = "btnAddRecipe";
             btnAddRecipe.Size = new Size(75, 23);
             btnAddRecipe.TabIndex = 3;
@@ -97,18 +98,29 @@
             flowLayoutPanel1.Size = new Size(472, 152);
             flowLayoutPanel1.TabIndex = 4;
             // 
+            // Add
+            // 
+            Add.Location = new Point(394, 557);
+            Add.Name = "Add";
+            Add.Size = new Size(90, 32);
+            Add.TabIndex = 5;
+            Add.Text = "Add Recipe";
+            Add.UseVisualStyleBackColor = true;
+            Add.Click += Add_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(496, 599);
+            Controls.Add(Add);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(btnAddRecipe);
             Controls.Add(txtRecipeName);
             Controls.Add(listView1);
             Controls.Add(panel1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Recipe App";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -124,5 +136,6 @@
         private TextBox txtRecipeName;
         private Button btnAddRecipe;
         private FlowLayoutPanel flowLayoutPanel1;
+        private Button Add;
     }
 }
