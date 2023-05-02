@@ -82,6 +82,7 @@
         "1/2 cup pesto sauce",
         "1/2 cup grated Parmesan cheese",
         "1/4 cup chopped fresh parsley",
+       
         "1/4 tsp salt",
         "1/4 tsp black pepper"
       ],
@@ -91,6 +92,74 @@
         "Add pesto sauce, Parmesan cheese, salt, and black pepper to the pot, stirring to combine.",
         "Warm pasta over low heat, stirring frequently, until sauce is heated through and cheese is melted, about 3-5 minutes.",
         "Serve pasta topped with chopped parsley."
+      ]
+      "name": "Banana Pancakes",
+      "ingredients": [
+        "1 ripe banana, mashed",
+        "1 egg",
+        "1/4 cup milk",
+        "1/2 cup flour",
+        "1 tsp baking powder",
+        "1/4 tsp salt",
+        "1/4 tsp cinnamon",
+        "1 tbsp butter, melted"
+      ],
+      "instructions": [
+        "In a medium bowl, whisk together mashed banana, egg, and milk.",
+        "In a separate bowl, mix together flour, baking powder, salt, and cinnamon.",
+        "Add dry ingredients to the banana mixture and stir until just combined.",
+        "Melt butter in a nonstick skillet over medium heat.",
+        "Pour pancake batter onto the skillet in 1/4-cup portions.",
+        "Cook pancakes for 2-3 minutes on each side, until golden brown.",
+        "Serve pancakes warm with maple syrup and additional sliced bananas, if desired."
+      ]
+    },
+    {
+      "name": "Breakfast Burrito",
+      "ingredients": [
+        "4 large eggs",
+        "1/4 cup milk",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "2 tbsp butter",
+        "4 flour tortillas",
+        "1/2 cup shredded cheddar cheese",
+        "1/4 cup salsa",
+        "1/4 cup chopped fresh cilantro"
+      ],
+      "instructions": [
+        "In a medium bowl, whisk together eggs, milk, salt, and black pepper.",
+        "Melt butter in a large skillet over medium heat.",
+        "Add egg mixture to the skillet and cook, stirring frequently, until scrambled and cooked through, about 3-5 minutes.",
+        "Warm tortillas in the microwave for 15-20 seconds.",
+        "To assemble burritos, divide scrambled eggs among the tortillas.",
+        "Top each with shredded cheese, salsa, and chopped cilantro.",
+        "Roll up tortillas and serve immediately."
+      ]
+    },
+    {
+      "name": "Avocado Toast",
+      "ingredients": [
+        "2 slices whole wheat bread",
+        "1 ripe avocado, mashed",
+        "1/4 tsp garlic powder",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "1 tbsp olive oil",
+        "1/4 tsp red pepper flakes",
+        "2 eggs",
+        "1 tbsp chopped fresh parsley"
+      ],
+      "instructions": [
+        "Toast bread to desired level of crispiness.",
+        "In a small bowl, stir together mashed avocado, garlic powder, salt, and black pepper.",
+        "Spread avocado mixture over toasted bread slices.",
+        "In a small skillet, heat olive oil over medium heat.",
+        "Add red pepper flakes to the skillet and cook for 1-2 minutes.",
+        "Crack eggs into the skillet and cook until desired level of doneness, about 2-3 minutes for over-easy.",
+        "Top each toast with a cooked egg.",
+        "Garnish with chopped parsley and additional red pepper flakes, if desired.",
+        "Serve immediately."
       ]
     }]
 }
