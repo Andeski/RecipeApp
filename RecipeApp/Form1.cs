@@ -9,30 +9,13 @@ namespace RecipeApp
         private List<Food> foods;
 
         public Form1()
-        {
+        {   //initialize/subscribe events on load
             InitializeComponent();
             listView1.View = View.List;
             listView1.MouseClick += listView1_MouseClick;
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            //listView1_SelectedIndexChanged();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public class Food
-        {
-            public string name { get; set; }
-            public List<string> ingredients { get; set; }
-            public List<string> instructions { get; set; }
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //read .json
             string path = Path.Combine(Application.StartupPath, "recipes.json");
@@ -77,10 +60,26 @@ namespace RecipeApp
                 listView1.Columns[0].Width = Math.Max(foodNameWidth + padding, listView1.Columns[0].Width);
                 //)
             }
-
-            listView1.SelectedIndexChanged -= listView1_SelectedIndexChanged;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public class Food
+        {
+            public string name { get; set; }
+            public List<string> ingredients { get; set; }
+            public List<string> instructions { get; set; }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        //make text react to click
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
             if (listView1.SelectedItems.Count > 0) //check if any items are selected
@@ -97,6 +96,7 @@ namespace RecipeApp
             }
         }
 
+        //create details window on click
         public partial class FoodDetailsForm : Form
         {
             public FoodDetailsForm(Food food)
@@ -104,7 +104,7 @@ namespace RecipeApp
                 //set title of window to the name of the selected food
                 Text = food.name;
 
-                //create a table layout panel to hold the controls
+                //create a table layout panel to hold controls
                 TableLayoutPanel table = new TableLayoutPanel();
                 table.Dock = DockStyle.Fill;
                 table.AutoSize = true;
