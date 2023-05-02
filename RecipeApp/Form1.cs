@@ -29,7 +29,8 @@ namespace RecipeApp
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string json = File.ReadAllText("foods.json");
+            string path = Path.Combine(Application.StartupPath, "recipes.json");
+            string json = File.ReadAllText(path);
             List<Food> foods = JsonConvert.DeserializeObject<List<Food>>(json);
 
             foreach (Food food in foods)
