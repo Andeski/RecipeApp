@@ -77,12 +77,7 @@
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // Recipe
-            // 
-            this.Recipe.Tag = "Test1";
-            this.Recipe.Text = "Recipe";
-            this.Recipe.Width = 300;
+
             // 
             // txtRecipeName
             // 
