@@ -72,7 +72,7 @@
             this.recipeCategories.Location = new System.Drawing.Point(0, 84);
             this.recipeCategories.Name = "recipeCategories";
             this.recipeCategories.ShowGroups = false;
-            this.recipeCategories.Size = new System.Drawing.Size(344, 195);
+            this.recipeCategories.Size = new System.Drawing.Size(344, 476);
             this.recipeCategories.TabIndex = 1;
             this.recipeCategories.TileSize = new System.Drawing.Size(48, 48);
             this.recipeCategories.UseCompatibleStateImageBehavior = false;
@@ -86,7 +86,7 @@
             // 
             // txtRecipeName
             // 
-            this.txtRecipeName.Location = new System.Drawing.Point(7, 295);
+            this.txtRecipeName.Location = new System.Drawing.Point(12, 566);
             this.txtRecipeName.Name = "txtRecipeName";
             this.txtRecipeName.PlaceholderText = "Tee uusi resepti...";
             this.txtRecipeName.Size = new System.Drawing.Size(239, 23);
@@ -94,11 +94,11 @@
             // 
             // btnAddRecipe
             // 
-            this.btnAddRecipe.Location = new System.Drawing.Point(252, 295);
+            this.btnAddRecipe.Location = new System.Drawing.Point(257, 566);
             this.btnAddRecipe.Name = "btnAddRecipe";
             this.btnAddRecipe.Size = new System.Drawing.Size(75, 23);
             this.btnAddRecipe.TabIndex = 3;
-            this.btnAddRecipe.Text = "Lähetä";
+            this.btnAddRecipe.Text = "Find";
             this.btnAddRecipe.UseVisualStyleBackColor = true;
             // 
             // Form1
