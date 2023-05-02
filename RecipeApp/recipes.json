@@ -94,6 +94,9 @@
         "Serve pasta topped with chopped parsley."
       ]
       "name": "Banana Pancakes",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "1 ripe banana, mashed",
         "1 egg",
@@ -116,6 +119,9 @@
     },
     {
       "name": "Breakfast Burrito",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "4 large eggs",
         "1/4 cup milk",
@@ -139,6 +145,9 @@
     },
     {
       "name": "Avocado Toast",
+      "type": "",
+      "portions": "",
+      "difficulty":"",
       "ingredients": [
         "2 slices whole wheat bread",
         "1 ripe avocado, mashed",
