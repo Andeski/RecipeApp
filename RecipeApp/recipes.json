@@ -1,0 +1,84 @@
+{
+  "foods": [
+    {
+      "name": "Roasted Chicken",
+      "ingredients": [
+        "1 whole chicken",
+        "2 tbsp olive oil",
+        "1 tsp salt",
+        "1/2 tsp black pepper",
+        "2 cloves garlic, minced",
+        "1 lemon, sliced",
+        "4 sprigs fresh thyme"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F.",
+        "Pat chicken dry with paper towels and rub all over with olive oil.",
+        "Season chicken with salt and black pepper, rubbing into the skin.",
+        "Stuff cavity with garlic, lemon slices, and thyme sprigs.",
+        "Place chicken in a roasting pan and roast for 1 hour and 15 minutes or until internal temperature reaches 165°F.",
+        "Let chicken rest for 10 minutes before carving and serving."
+      ]
+    },
+    {
+      "name": "Beef Tacos",
+      "ingredients": [
+        "1 lb ground beef",
+        "8 corn tortillas",
+        "1/2 onion, chopped",
+        "2 cloves garlic, minced",
+        "1/2 tsp cumin",
+        "1/2 tsp chili powder",
+        "1/4 tsp paprika",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "1/4 cup chopped fresh cilantro",
+        "1 lime, cut into wedges"
+      ],
+      "instructions": [
+        "In a large skillet, cook ground beef over medium-high heat until browned, about 5-7 minutes.",
+        "Add onion and garlic to skillet and cook until softened, about 3-5 minutes.",
+        "Stir in cumin, chili powder, paprika, salt, and black pepper, cooking for an additional 1-2 minutes.",
+        "Warm tortillas in a separate skillet over medium heat.",
+        "To assemble tacos, spoon beef mixture onto each tortilla and top with chopped cilantro and a squeeze of lime juice.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Caprese Salad",
+      "ingredients": [
+        "2 large tomatoes, sliced",
+        "8 oz fresh mozzarella cheese, sliced",
+        "1/4 cup chopped fresh basil",
+        "2 tbsp balsamic vinegar",
+        "2 tbsp olive oil",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper"
+      ],
+      "instructions": [
+        "Arrange tomato and mozzarella slices on a serving platter.",
+        "Sprinkle chopped basil over the top.",
+        "In a small bowl, whisk together balsamic vinegar, olive oil, salt, and black pepper.",
+        "Drizzle dressing over the salad.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Pesto Pasta",
+      "ingredients": [
+        "8 oz pasta",
+        "1/2 cup pesto sauce",
+        "1/2 cup grated Parmesan cheese",
+        "1/4 cup chopped fresh parsley",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper"
+      ],
+      "instructions": [
+        "Cook pasta according to package instructions.",
+        "Drain pasta and return to the pot.",
+        "Add pesto sauce, Parmesan cheese, salt, and black pepper to the pot, stirring to combine.",
+        "Warm pasta over low heat, stirring frequently, until sauce is heated through and cheese is melted, about 3-5 minutes.",
+        "Serve pasta topped with chopped parsley."
+      ]
+    }
+}
