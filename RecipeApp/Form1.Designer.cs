@@ -34,7 +34,7 @@
             System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Test3");
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.recipeCategories = new System.Windows.Forms.ListView();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.txtRecipeName = new System.Windows.Forms.TextBox();
@@ -61,27 +61,27 @@
             this.label1.Text = "Reseptit";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // recipeCategories
+            // listView1
             // 
-            this.recipeCategories.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
             listViewGroup2.Header = "ListViewGroup";
             listViewGroup2.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             listViewGroup2.Name = "listViewGroup1";
             listViewGroup2.Subtitle = "asd";
-            this.recipeCategories.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup2});
-            this.recipeCategories.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem4,
             listViewItem5,
             listViewItem6});
-            this.recipeCategories.Location = new System.Drawing.Point(0, 84);
-            this.recipeCategories.Name = "recipeCategories";
-            this.recipeCategories.Size = new System.Drawing.Size(344, 195);
-            this.recipeCategories.TabIndex = 1;
-            this.recipeCategories.UseCompatibleStateImageBehavior = false;
-            this.recipeCategories.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.Location = new System.Drawing.Point(0, 84);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(344, 195);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -111,7 +111,7 @@
             this.ClientSize = new System.Drawing.Size(344, 601);
             this.Controls.Add(this.btnAddRecipe);
             this.Controls.Add(this.txtRecipeName);
-            this.Controls.Add(this.recipeCategories);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -127,7 +127,7 @@
 
         private Panel panel1;
         private Label label1;
-        private ListView recipeCategories;
+        private ListView listView1;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private TextBox txtRecipeName;
