@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Test");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Test2");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Test3");
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Test");
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.recipeCategories = new System.Windows.Forms.ListView();
@@ -67,16 +65,14 @@
             this.recipeCategories.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup3.Name = "listViewGroup1";
-            listViewGroup3.Subtitle = "asd";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup1.Subtitle = "asd";
             this.recipeCategories.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3});
+            listViewGroup1});
             this.recipeCategories.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7,
-            listViewItem8,
-            listViewItem9});
+            listViewItem1});
             this.recipeCategories.Location = new System.Drawing.Point(0, 84);
             this.recipeCategories.Name = "recipeCategories";
             this.recipeCategories.Size = new System.Drawing.Size(344, 195);
@@ -91,7 +87,7 @@
             // 
             this.txtRecipeName.Location = new System.Drawing.Point(7, 295);
             this.txtRecipeName.Name = "txtRecipeName";
-            this.txtRecipeName.PlaceholderText = "Tee uusi resepti...";
+            this.txtRecipeName.PlaceholderText = "Hae reseptiä...";
             this.txtRecipeName.Size = new System.Drawing.Size(239, 23);
             this.txtRecipeName.TabIndex = 2;
             // 
@@ -101,8 +97,9 @@
             this.btnAddRecipe.Name = "btnAddRecipe";
             this.btnAddRecipe.Size = new System.Drawing.Size(75, 23);
             this.btnAddRecipe.TabIndex = 3;
-            this.btnAddRecipe.Text = "Lähetä";
+            this.btnAddRecipe.Text = "Hae";
             this.btnAddRecipe.UseVisualStyleBackColor = true;
+            this.btnAddRecipe.Click += new System.EventHandler(this.BtnHae);
             // 
             // contextMenuStrip1
             // 
