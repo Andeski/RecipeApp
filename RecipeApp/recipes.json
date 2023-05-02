@@ -170,5 +170,62 @@
         "Garnish with chopped parsley and additional red pepper flakes, if desired.",
         "Serve immediately."
       ]
+        "name": "Loaded Sweet Potato Fries",
+      "ingredients": [
+        "1 large sweet potato",
+        "1 tbsp olive oil",
+        "1/2 tsp salt",
+        "1/4 tsp black pepper",
+        "1/4 tsp garlic powder",
+        "1/4 tsp smoked paprika",
+        "1/2 cup shredded cheddar cheese",
+        "2 tbsp sliced scallions",
+        "2 tbsp crumbled bacon"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "Peel sweet potato and cut into thin fries.",
+        "In a bowl, toss sweet potato fries with olive oil, salt, black pepper, garlic powder, and smoked paprika.",
+        "Spread fries in a single layer on a baking sheet.",
+        "Bake for 20-25 minutes, until crispy and golden brown.",
+        "Sprinkle cheddar cheese over the hot fries and return to the oven for 2-3 minutes, until cheese is melted.",
+        "Top with sliced scallions and crumbled bacon.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Caprese Skewers",
+      "ingredients": [
+        "1 pint cherry tomatoes",
+        "8 oz fresh mozzarella, cut into bite-sized pieces",
+        "1/4 cup fresh basil leaves",
+        "1 tbsp balsamic glaze",
+        "1/4 tsp salt",
+        "1/4 tsp black pepper",
+        "8 wooden skewers"
+      ],
+      "instructions": [
+        "Thread cherry tomatoes, fresh mozzarella, and basil leaves onto wooden skewers.",
+        "Drizzle skewers with balsamic glaze and sprinkle with salt and black pepper.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "name": "Hummus and Veggie Plate",
+      "ingredients": [
+        "1/2 cup hummus",
+        "1/2 red bell pepper, sliced",
+        "1/2 yellow bell pepper, sliced",
+        "1/2 cucumber, sliced",
+        "1/2 carrot, sliced",
+        "1/4 cup pitted kalamata olives",
+        "1/4 cup feta cheese crumbles"
+      ],
+      "instructions": [
+        "Arrange hummus in a small bowl in the center of a plate.",
+        "Surround the hummus with sliced bell peppers, cucumber, and carrot.",
+        "Sprinkle kalamata olives and feta cheese over the top.",
+        "Serve immediately."
+      ]
     }]
 }
