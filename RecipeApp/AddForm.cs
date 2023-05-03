@@ -15,6 +15,7 @@ namespace RecipeApp
 {
     public partial class AddForm : Form
     {
+        //joo
         public string filePath = Path.Combine(Application.StartupPath, "recipes.json");
         public AddForm()
         {
@@ -32,9 +33,9 @@ namespace RecipeApp
             Food newRecipe = new Food() 
             {
                 name = NameBox.Text,
-                type = "ON",
-                portions = "ON",
-                difficulty = "ON",
+                type = TypeBox.Text,
+                portions = PortionsBox.Value.ToString(),
+                difficulty = DifficultyBox.Value.ToString(),
                 ingredients = new List<string> { IngredientBox.Text },
                 instructions = new List<string> { InstructionsBox.Text }
             };
