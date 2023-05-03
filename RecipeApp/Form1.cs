@@ -41,7 +41,7 @@ namespace RecipeApp
                 item = new ListViewItem(food.name);
 
                 //add sub-items for each ingredient and instruction
-                foreach (string ingredient in food.ingredients)
+                /*foreach (string ingredient in food.ingredients)
                 {
                     item.SubItems.Add(new ListViewItem.ListViewSubItem(item, ingredient));
                 }
@@ -50,7 +50,7 @@ namespace RecipeApp
                 {
                     item.SubItems.Add(new ListViewItem.ListViewSubItem(item, instruction));
                 }
-
+                */
                 //add the item to the listview object
                 listView1.Items.Add(item);
 
