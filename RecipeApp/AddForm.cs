@@ -59,5 +59,10 @@ namespace RecipeApp
             //    Trace.WriteLine("");
             //}
         }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
