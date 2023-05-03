@@ -47,7 +47,7 @@ namespace RecipeApp
             Trace.WriteLine(newJson);
             sw.Write(newJson);
             sw.Close();
-
+            
             //foreach (Food i in list)
             //{
             //    Trace.WriteLine(i.name + "\n");

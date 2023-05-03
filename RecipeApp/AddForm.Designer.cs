@@ -188,6 +188,7 @@
             this.AddBtn.TabIndex = 15;
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // CancelBtn
             // 
