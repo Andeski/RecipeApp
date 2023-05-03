@@ -111,6 +111,26 @@ namespace RecipeApp
                 };
                 table.Controls.Add(ingredientsLabel, 0, 0);
 
+                //display difficulty
+                string difficulty = string.Join(Environment.NewLine, food.difficulty);
+                Label diffLabel = new Label
+                {
+                    Text = $"\nDifficulty:{Environment.NewLine}{difficulty}",
+                    Dock = DockStyle.Fill,
+                    AutoSize = true
+                };
+                table.Controls.Add(diffLabel, 0, 1);
+
+                //display portions
+                string portions = string.Join(Environment.NewLine, food.portions);
+                Label portionLabel = new Label
+                {
+                    Text = $"\nPortions:{Environment.NewLine}{portions}",
+                    Dock = DockStyle.Fill,
+                    AutoSize = true
+                };
+                table.Controls.Add(portionLabel, 0, 1);
+
                 //display instructions
                 string instructions = string.Join(Environment.NewLine, food.instructions);
                 Label instructionsLabel = new Label
@@ -119,7 +139,7 @@ namespace RecipeApp
                     Dock = DockStyle.Fill,
                     AutoSize = true
                 };
-                table.Controls.Add(instructionsLabel, 0, 1);
+                table.Controls.Add(instructionsLabel, 0, 2);
 
                 //add table layout panel to the form
                 Controls.Add(table);
