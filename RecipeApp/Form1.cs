@@ -11,7 +11,7 @@ namespace RecipeApp
         public Form1()
         {   //initialize/subscribe events on load
             InitializeComponent();
-            listView1.View = View.List;
+            listView1.View = View.Details;
             listView1.MouseClick += listView1_MouseClick;
         }
 
@@ -26,11 +26,12 @@ namespace RecipeApp
             listView1.Items.Clear();
 
             //set the column header text
-            listView1.Columns.Add("Food Name"); //Does not work, miksi?? Jos poistaa koko paska hajoo :D (1/3)
+            listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3)
 
             //set the auto-resize mode for columns
             listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent); //(2/3)
-            listView1.Columns[0].Width = -1; //(3/3)
+            listView1.Columns[0].Width = -1; //(3/3) Jos column m‰‰r‰ on NULL tulee fatal error, yksi column on luotava
+
 
 
             foreach (Food food in foods)
@@ -60,6 +61,8 @@ namespace RecipeApp
                 listView1.Columns[0].Width = Math.Max(foodNameWidth + padding, listView1.Columns[0].Width);
                 //)
             }
+
+            listView1.Columns[0].Text = listView1.Items.Count.ToString() + " Recipes listed";
         }
 
 
