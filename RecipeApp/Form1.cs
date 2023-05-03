@@ -5,17 +5,19 @@ namespace RecipeApp
 
     public partial class Form1 : Form
     {
-
+        public static Form1 instanssi;
         private List<Food> foods;
         AddForm addForm;
         public Form1()
         {   //initialize/subscribe events on load
             InitializeComponent();
+            instanssi = this;
             listView1.View = View.Details;
             listView1.MouseClick += listView1_MouseClick;
+            listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3)
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void PrintRecipes()
         {
             //read .json
             string path = Path.Combine(Application.StartupPath, "recipes.json");
@@ -26,13 +28,10 @@ namespace RecipeApp
             listView1.Items.Clear();
 
             //set the column header text
-            listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3)
 
             //set the auto-resize mode for columns
             listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent); //(2/3)
             listView1.Columns[0].Width = -1; //(3/3) Jos column m‰‰r‰ on NULL tulee fatal error, yksi column on luotava
-
-
 
             foreach (Food food in foods)
             {
@@ -40,17 +39,6 @@ namespace RecipeApp
                 //create a new listview item with the food name as the text
                 item = new ListViewItem(food.name);
 
-                //add sub-items for each ingredient and instruction
-                /*foreach (string ingredient in food.ingredients)
-                {
-                    item.SubItems.Add(new ListViewItem.ListViewSubItem(item, ingredient));
-                }
-
-                foreach (string instruction in food.instructions)
-                {
-                    item.SubItems.Add(new ListViewItem.ListViewSubItem(item, instruction));
-                }
-                */
                 //add the item to the listview object
                 listView1.Items.Add(item);
 
@@ -63,6 +51,12 @@ namespace RecipeApp
             }
 
             listView1.Columns[0].Text = listView1.Items.Count.ToString() + " Recipes listed";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            PrintRecipes();
         }
 
 
