@@ -37,7 +37,8 @@ namespace RecipeApp
                 portions = PortionsBox.Value.ToString(),
                 difficulty = DifficultyBox.Value.ToString(),
                 ingredients = new List<string> { IngredientBox.Text },
-                instructions = new List<string> { InstructionsBox.Text }
+                instructions = new List<string> { InstructionsBox.Text },
+                imagePath = textBoxFileName.Text
             };
 
             list.Add(newRecipe);
@@ -60,6 +61,7 @@ namespace RecipeApp
             //        Trace.WriteLine(a);
             //    Trace.WriteLine("");
             //}
+            Close();
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
@@ -72,9 +74,30 @@ namespace RecipeApp
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void buttonBrowse_Click(object sender, EventArgs e)
         {
+            try
+            {
+                openFileDialogUploadImage.InitialDirectory = @"C:\";
+                openFileDialogUploadImage.Title = "Select an image to upload";
+                openFileDialogUploadImage.FileName = String.Empty;
+                openFileDialogUploadImage.ShowHelp = false;
+                openFileDialogUploadImage.Filter = "Image Files(*.PNG;*.JPG;)|*.PNG;*.JPG |All Files (*.*)|*.*";
+                DialogResult _result = openFileDialogUploadImage.ShowDialog();
+                if (_result == DialogResult.Cancel)
+                {
 
+                }
+                else
+                {
+                    textBoxFileName.Text = openFileDialogUploadImage.FileName;
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
     }
 }
