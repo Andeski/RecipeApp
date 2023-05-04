@@ -226,7 +226,6 @@
             this.ShowIcon = false;
             this.Text = "New recipe";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.AddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PortionsBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).EndInit();
             this.ResumeLayout(false);

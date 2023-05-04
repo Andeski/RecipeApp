@@ -39,8 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.btnAddRecipe = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -59,7 +59,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(218, 608);
+            this.panel1.Size = new System.Drawing.Size(697, 608);
             this.panel1.TabIndex = 0;
             // 
             // button3
@@ -110,8 +110,8 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(53, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(115, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -135,7 +135,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(42, 64);
+            this.label1.Location = new System.Drawing.Point(42, -248);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 40);
             this.label1.TabIndex = 0;
@@ -152,6 +152,7 @@
             // 
             // btnAddRecipe
             // 
+            this.btnAddRecipe.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAddRecipe.FlatAppearance.BorderSize = 0;
             this.btnAddRecipe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OliveDrab;
             this.btnAddRecipe.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -163,6 +164,16 @@
             this.btnAddRecipe.Text = "Find";
             this.btnAddRecipe.UseVisualStyleBackColor = true;
             this.btnAddRecipe.Click += new System.EventHandler(this.FindBtn_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnAddRecipe);
+            this.flowLayoutPanel1.Controls.Add(this.txtRecipeName);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(220, 566);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(472, 42);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // listView1
             // 
@@ -179,16 +190,6 @@
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnAddRecipe);
-            this.flowLayoutPanel1.Controls.Add(this.txtRecipeName);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(220, 566);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(472, 42);
-            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // Form1
             // 
@@ -217,7 +218,6 @@
 
         private Panel panel1;
         private Label label1;
-        private ListView listView1;
         private TextBox txtRecipeName;
         private Button btnAddRecipe;
         private FlowLayoutPanel flowLayoutPanel1;
@@ -226,5 +226,6 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private ListView listView1;
     }
 }
