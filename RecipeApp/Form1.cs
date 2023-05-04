@@ -55,15 +55,9 @@ namespace RecipeApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             PrintRecipes();
         }
 
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         //make text react to click
         private void listView1_MouseClick(object sender, MouseEventArgs e)
@@ -148,6 +142,26 @@ namespace RecipeApp
         {
             addForm = new AddForm();
             addForm.Show();
+        }
+
+        private void FindBtn_Click(object sender, EventArgs e)
+        {
+            string searchable = txtRecipeName.Text;
+
+            if (searchable.Count() > 0)
+            {
+                var search = from a in foods
+                             where a.name.Contains(searchable) || a.type.Contains(searchable) ||
+                            a.portions.Contains(searchable) || a.difficulty.Contains(searchable) ||
+                            a.ingredients.Contains(searchable) || a.instructions.Contains(searchable)
+                            select a;
+                listView1.Items.Clear();
+
+                foreach (var i in search)
+                {
+                    listView1.Items.Add(i.name);
+                }
+            }
         }
     }
 }

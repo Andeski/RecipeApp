@@ -65,5 +65,10 @@ namespace RecipeApp
         {
             Close();
         }
+
+        private void AddForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

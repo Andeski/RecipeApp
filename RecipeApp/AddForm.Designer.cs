@@ -221,8 +221,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "AddForm";
-            this.Text = "AddForm";
+            this.ShowIcon = false;
+            this.Text = "New recipe";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.AddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PortionsBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).EndInit();
             this.ResumeLayout(false);
