@@ -42,6 +42,7 @@
             this.Add = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.Foodname = new System.Windows.Forms.ColumnHeader();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,10 +88,10 @@
             // 
             // txtRecipeName
             // 
-            this.txtRecipeName.Location = new System.Drawing.Point(179, 3);
+            this.txtRecipeName.Location = new System.Drawing.Point(7, 3);
             this.txtRecipeName.Name = "txtRecipeName";
             this.txtRecipeName.PlaceholderText = "Find a recipe...";
-            this.txtRecipeName.Size = new System.Drawing.Size(209, 23);
+            this.txtRecipeName.Size = new System.Drawing.Size(381, 23);
             this.txtRecipeName.TabIndex = 2;
             // 
             // panel2
@@ -193,6 +194,8 @@
             // listView1
             // 
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Foodname});
             this.listView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listView1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.listView1.GridLines = true;
@@ -205,6 +208,11 @@
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // Foodname
+            // 
+            this.Foodname.Text = "Food name";
+            this.Foodname.Width = 483;
             // 
             // Form1
             // 
@@ -243,5 +251,6 @@
         private Button button2;
         private Button button1;
         private Panel panel2;
+        private ColumnHeader Foodname;
     }
 }

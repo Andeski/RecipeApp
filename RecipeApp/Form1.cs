@@ -15,7 +15,7 @@ namespace RecipeApp
             instanssi = this;
             listView1.View = View.Details;
             listView1.MouseClick += listView1_MouseClick;
-            listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3) 
+            //listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3)
         }
 
         public void PrintRecipes()
@@ -32,8 +32,8 @@ namespace RecipeApp
             //set the column header text
 
             //set the auto-resize mode for columns
-            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent); //(2/3)
-            listView1.Columns[0].Width = -1; //(3/3) Jos column m‰‰r‰ on NULL tulee fatal error, yksi column on luotava
+            //listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent); //(2/3)
+            //listView1.Columns[0].Width = -1; //(3/3) Jos column m‰‰r‰ on NULL tulee fatal error, yksi column on luotava
             
             foreach (Food food in foods)
             {
@@ -44,10 +44,10 @@ namespace RecipeApp
                 listView1.Items.Add(item);
 
                 //fixing the truncated/bunched up text with this //( huhhuh pitk‰ s‰‰tˆ:
-                int foodNameWidth = TextRenderer.MeasureText(item.Text, listView1.Font).Width;
-                int otherColumnsWidth = listView1.Columns.Cast<ColumnHeader>().Skip(1).Sum(c => c.Width);
-                int padding = listView1.ClientSize.Width - otherColumnsWidth - SystemInformation.VerticalScrollBarWidth;
-                listView1.Columns[0].Width = Math.Max(foodNameWidth + padding, listView1.Columns[0].Width);
+                //int foodNameWidth = TextRenderer.MeasureText(item.Text, listView1.Font).Width;
+                //int otherColumnsWidth = listView1.Columns.Cast<ColumnHeader>().Skip(1).Sum(c => c.Width);
+                //int padding = listView1.ClientSize.Width - otherColumnsWidth - SystemInformation.VerticalScrollBarWidth;
+                //listView1.Columns[0].Width = Math.Max(foodNameWidth + padding, listView1.Columns[0].Width);
             }
 
             listView1.Columns[0].Text = listView1.Items.Count.ToString() + " Recipes listed";
