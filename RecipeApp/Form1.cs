@@ -14,7 +14,7 @@ namespace RecipeApp
             instanssi = this;
             listView1.View = View.Details;
             listView1.MouseClick += listView1_MouseClick;
-            listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3)
+            listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3) 
         }
 
         public void PrintRecipes()
@@ -35,7 +35,6 @@ namespace RecipeApp
 
             foreach (Food food in foods)
             {
-
                 //create a new listview item with the food name as the text
                 item = new ListViewItem(food.name);
 
@@ -47,7 +46,6 @@ namespace RecipeApp
                 int otherColumnsWidth = listView1.Columns.Cast<ColumnHeader>().Skip(1).Sum(c => c.Width);
                 int padding = listView1.ClientSize.Width - otherColumnsWidth - SystemInformation.VerticalScrollBarWidth;
                 listView1.Columns[0].Width = Math.Max(foodNameWidth + padding, listView1.Columns[0].Width);
-                //)
             }
 
             listView1.Columns[0].Text = listView1.Items.Count.ToString() + " Recipes listed";
@@ -59,11 +57,6 @@ namespace RecipeApp
             PrintRecipes();
         }
 
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         //make text react to click
         private void listView1_MouseClick(object sender, MouseEventArgs e)
@@ -148,6 +141,25 @@ namespace RecipeApp
         {
             addForm = new AddForm();
             addForm.Show();
+        }
+
+        private void FindBtn_Click(object sender, EventArgs e)
+        {
+            string searchable = txtRecipeName.Text;
+            
+            if(searchable.Count() > 0)
+            {
+                var search = from a in foods
+                            where a.name.Contains(searchable) || a.type.Contains(searchable) ||
+                            a.portions.Contains(searchable) || a.difficulty.Contains(searchable) ||
+                            a.ingredients.Contains(searchable) || a.instructions.Contains(searchable)
+                            select a;
+                //foreach(var i in search)
+                //{
+                    
+                //}
+            }
+
         }
     }
 }
