@@ -6,8 +6,9 @@ namespace RecipeApp
     public partial class Form1 : Form
     {
         public static Form1 instanssi;
-        private List<Food> foods;
+        public List<Food> foods;
         AddForm addForm;
+
         public Form1()
         {   //initialize/subscribe events on load
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace RecipeApp
             //read .json
             string path = Path.Combine(Application.StartupPath, "recipes.json");
             string json = File.ReadAllText(path);
+            List<Food> newFoods = new List<Food>();
             foods = JsonConvert.DeserializeObject<List<Food>>(json);
             ListViewItem item = null;
             //clear any useless items
@@ -32,12 +34,12 @@ namespace RecipeApp
             //set the auto-resize mode for columns
             listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent); //(2/3)
             listView1.Columns[0].Width = -1; //(3/3) Jos column m‰‰r‰ on NULL tulee fatal error, yksi column on luotava
-
+            
             foreach (Food food in foods)
             {
                 //create a new listview item with the food name as the text
                 item = new ListViewItem(food.name);
-
+                item.Font = new Font(item.Font, FontStyle.Regular);
                 //add the item to the listview object
                 listView1.Items.Add(item);
 
@@ -53,10 +55,8 @@ namespace RecipeApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             PrintRecipes();
         }
-
 
         //make text react to click
         private void listView1_MouseClick(object sender, MouseEventArgs e)
@@ -154,12 +154,13 @@ namespace RecipeApp
                             a.portions.Contains(searchable) || a.difficulty.Contains(searchable) ||
                             a.ingredients.Contains(searchable) || a.instructions.Contains(searchable)
                             select a;
-                //foreach(var i in search)
-                //{
-                    
-                //}
-            }
+                listView1.Items.Clear();
 
+                foreach (var i in search)
+                {
+                    listView1.Items.Add(i.name);
+                }
+            }
         }
     }
 }
