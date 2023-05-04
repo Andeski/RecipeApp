@@ -71,73 +71,76 @@ namespace RecipeApp
                 //find the food item that matches the selected name
                 Food food = foods.FirstOrDefault(f => f.name == foodName);
 
-                //create a new form to display the food details
-                FoodDetailsForm detailsForm = new FoodDetailsForm(food);
-                detailsForm.Show();
+                ////create a new form to display the food details
+                //FoodDetailsForm detailsForm = new FoodDetailsForm(food);
+                //detailsForm.Show();
+                RecipeDetailsForm recipeDetailsForm = new RecipeDetailsForm();
+                recipeDetailsForm.Show();
+                recipeDetailsForm.doStuff(food);
             }
         }
 
-        //create details window on click
-        public partial class FoodDetailsForm : Form
-        {
-            public FoodDetailsForm(Food food)
-            {
-                Size = new Size(450, 750);
-                //set title of window to the name of the selected food
-                Text = food.name;
+        ////create details window on click
+        //public partial class FoodDetailsForm : Form
+        //{
+        //    public FoodDetailsForm(Food food)
+        //    {
+        //        Size = new Size(450, 750);
+        //        //set title of window to the name of the selected food
+        //        Text = food.name;
 
-                //create a table layout panel to hold controls
-                TableLayoutPanel table = new TableLayoutPanel();
-                table.Dock = DockStyle.Fill;
-                table.AutoSize = true;
-                table.AutoScroll = true;
-                table.ColumnCount = 1;
-                table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
+        //        //create a table layout panel to hold controls
+        //        TableLayoutPanel table = new TableLayoutPanel();
+        //        table.Dock = DockStyle.Fill;
+        //        table.AutoSize = true;
+        //        table.AutoScroll = true;
+        //        table.ColumnCount = 1;
+        //        table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
 
-                //display ingredients
-                string ingredients = string.Join(Environment.NewLine, food.ingredients);
-                Label ingredientsLabel = new Label
-                {
-                    Text = $"Ingredients:{Environment.NewLine}{ingredients}",
-                    Dock = DockStyle.Fill,
-                    AutoSize = true
-                };
-                table.Controls.Add(ingredientsLabel, 0, 0);
+        //        //display ingredients
+        //        string ingredients = string.Join(Environment.NewLine, food.ingredients);
+        //        Label ingredientsLabel = new Label
+        //        {
+        //            Text = $"Ingredients:{Environment.NewLine}{ingredients}",
+        //            Dock = DockStyle.Fill,
+        //            AutoSize = true
+        //        };
+        //        table.Controls.Add(ingredientsLabel, 0, 0);
 
-                //display difficulty
-                string difficulty = string.Join(Environment.NewLine, food.difficulty);
-                Label diffLabel = new Label
-                {
-                    Text = $"\nDifficulty:{Environment.NewLine}{difficulty}",
-                    Dock = DockStyle.Fill,
-                    AutoSize = true
-                };
-                table.Controls.Add(diffLabel, 0, 1);
+        //        //display difficulty
+        //        string difficulty = string.Join(Environment.NewLine, food.difficulty);
+        //        Label diffLabel = new Label
+        //        {
+        //            Text = $"\nDifficulty:{Environment.NewLine}{difficulty}",
+        //            Dock = DockStyle.Fill,
+        //            AutoSize = true
+        //        };
+        //        table.Controls.Add(diffLabel, 0, 1);
 
-                //display portions
-                string portions = string.Join(Environment.NewLine, food.portions);
-                Label portionLabel = new Label
-                {
-                    Text = $"\nPortions:{Environment.NewLine}{portions}",
-                    Dock = DockStyle.Fill,
-                    AutoSize = true
-                };
-                table.Controls.Add(portionLabel, 0, 1);
+        //        //display portions
+        //        string portions = string.Join(Environment.NewLine, food.portions);
+        //        Label portionLabel = new Label
+        //        {
+        //            Text = $"\nPortions:{Environment.NewLine}{portions}",
+        //            Dock = DockStyle.Fill,
+        //            AutoSize = true
+        //        };
+        //        table.Controls.Add(portionLabel, 0, 1);
 
-                //display instructions
-                string instructions = string.Join(Environment.NewLine, food.instructions);
-                Label instructionsLabel = new Label
-                {
-                    Text = $"\nInstructions:{Environment.NewLine}{instructions}",
-                    Dock = DockStyle.Fill,
-                    AutoSize = true
-                };
-                table.Controls.Add(instructionsLabel, 0, 2);
+        //        //display instructions
+        //        string instructions = string.Join(Environment.NewLine, food.instructions);
+        //        Label instructionsLabel = new Label
+        //        {
+        //            Text = $"\nInstructions:{Environment.NewLine}{instructions}",
+        //            Dock = DockStyle.Fill,
+        //            AutoSize = true
+        //        };
+        //        table.Controls.Add(instructionsLabel, 0, 2);
 
-                //add table layout panel to the form
-                Controls.Add(table);
-            }
-        }
+        //        //add table layout panel to the form
+        //        Controls.Add(table);
+        //    }
+        //}
 
         //Luo lisäys Formin (uuden ikkunan)
         private void Add_Click(object sender, EventArgs e)

@@ -198,7 +198,7 @@
             // AddBtn
             // 
             this.AddBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddBtn.Location = new System.Drawing.Point(151, 576);
+            this.AddBtn.Location = new System.Drawing.Point(272, 576);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(79, 38);
             this.AddBtn.TabIndex = 15;
@@ -209,11 +209,11 @@
             // CancelBtn
             // 
             this.CancelBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CancelBtn.Location = new System.Drawing.Point(272, 576);
+            this.CancelBtn.Location = new System.Drawing.Point(151, 576);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(79, 38);
             this.CancelBtn.TabIndex = 16;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "Close";
             this.CancelBtn.UseVisualStyleBackColor = true;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
