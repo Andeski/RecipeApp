@@ -218,7 +218,7 @@
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(79, 38);
             this.CancelBtn.TabIndex = 16;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "Close";
             this.CancelBtn.UseVisualStyleBackColor = true;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
@@ -304,7 +304,6 @@
             this.ShowIcon = false;
             this.Text = "New recipe";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.AddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PortionsBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).EndInit();
             this.panel1.ResumeLayout(false);
