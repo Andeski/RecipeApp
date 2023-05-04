@@ -82,6 +82,7 @@ namespace RecipeApp
         {
             public FoodDetailsForm(Food food)
             {
+                Size = new Size(450, 750);
                 //set title of window to the name of the selected food
                 Text = food.name;
 
