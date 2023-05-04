@@ -37,7 +37,8 @@ namespace RecipeApp
                 portions = PortionsBox.Value.ToString(),
                 difficulty = DifficultyBox.Value.ToString(),
                 ingredients = new List<string> { IngredientBox.Text },
-                instructions = new List<string> { InstructionsBox.Text }
+                instructions = new List<string> { InstructionsBox.Text },
+                imagePath = textBoxFileName.Text
             };
 
             list.Add(newRecipe);
@@ -59,6 +60,7 @@ namespace RecipeApp
             //        Trace.WriteLine(a);
             //    Trace.WriteLine("");
             //}
+            Close();
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
