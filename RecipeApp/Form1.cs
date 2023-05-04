@@ -152,7 +152,7 @@ namespace RecipeApp
             if (searchable.Count() > 0)
             {
                 var search = from a in foods
-                             where a.name.Contains(searchable) || a.type.Contains(searchable) ||
+                             where a.name.ToUpper().Contains(searchable.ToUpper()) || a.type.ToLower().Contains(searchable.ToLower()) ||
                             a.portions.Contains(searchable) || a.difficulty.Contains(searchable) ||
                             a.ingredients.Contains(searchable) || a.instructions.Contains(searchable)
                             select a;
@@ -169,6 +169,16 @@ namespace RecipeApp
         private void AllRecipesBtn_Click(object sender, EventArgs e)
         {
             PrintRecipes();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
