@@ -101,8 +101,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(214, 50);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Placeholder";
+            this.button1.Text = "All Recipes";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.AllRecipesBtn_Click);
             // 
             // pictureBox1
             // 
@@ -191,6 +192,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnAddRecipe;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;

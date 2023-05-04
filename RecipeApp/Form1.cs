@@ -59,6 +59,7 @@ namespace RecipeApp
         }
 
 
+
         //make text react to click
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -159,9 +160,15 @@ namespace RecipeApp
 
                 foreach (var i in search)
                 {
+                    
                     listView1.Items.Add(i.name);
                 }
             }
+        }
+
+        private void AllRecipesBtn_Click(object sender, EventArgs e)
+        {
+            PrintRecipes();
         }
     }
 }
