@@ -46,9 +46,14 @@
             this.CancelBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBoxUploadImage = new System.Windows.Forms.GroupBox();
+            this.textBoxFileName = new System.Windows.Forms.TextBox();
+            this.buttonBrowse = new System.Windows.Forms.Button();
+            this.openFileDialogUploadImage = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.PortionsBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).BeginInit();
             this.panel1.SuspendLayout();
+            this.groupBoxUploadImage.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +70,7 @@
             // 
             this.NameBox.Location = new System.Drawing.Point(151, 51);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(200, 23);
+            this.NameBox.Size = new System.Drawing.Size(271, 23);
             this.NameBox.TabIndex = 1;
             // 
             // label2
@@ -94,7 +99,7 @@
             // 
             this.TypeBox.Location = new System.Drawing.Point(151, 80);
             this.TypeBox.Name = "TypeBox";
-            this.TypeBox.Size = new System.Drawing.Size(200, 23);
+            this.TypeBox.Size = new System.Drawing.Size(271, 23);
             this.TypeBox.TabIndex = 3;
             // 
             // label4
@@ -119,7 +124,7 @@
             // 
             this.DifficultyBox.Location = new System.Drawing.Point(151, 138);
             this.DifficultyBox.Maximum = new decimal(new int[] {
-            5,
+            3,
             0,
             0,
             0});
@@ -173,7 +178,7 @@
             this.IngredientBox.Location = new System.Drawing.Point(151, 167);
             this.IngredientBox.Multiline = true;
             this.IngredientBox.Name = "IngredientBox";
-            this.IngredientBox.Size = new System.Drawing.Size(200, 154);
+            this.IngredientBox.Size = new System.Drawing.Size(271, 154);
             this.IngredientBox.TabIndex = 12;
             // 
             // InstructionsBox
@@ -181,7 +186,7 @@
             this.InstructionsBox.Location = new System.Drawing.Point(151, 327);
             this.InstructionsBox.Multiline = true;
             this.InstructionsBox.Name = "InstructionsBox";
-            this.InstructionsBox.Size = new System.Drawing.Size(200, 154);
+            this.InstructionsBox.Size = new System.Drawing.Size(271, 154);
             this.InstructionsBox.TabIndex = 14;
             // 
             // label8
@@ -198,7 +203,7 @@
             // AddBtn
             // 
             this.AddBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddBtn.Location = new System.Drawing.Point(151, 576);
+            this.AddBtn.Location = new System.Drawing.Point(343, 576);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(79, 38);
             this.AddBtn.TabIndex = 15;
@@ -209,7 +214,7 @@
             // CancelBtn
             // 
             this.CancelBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CancelBtn.Location = new System.Drawing.Point(272, 576);
+            this.CancelBtn.Location = new System.Drawing.Point(257, 576);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(79, 38);
             this.CancelBtn.TabIndex = 16;
@@ -227,7 +232,6 @@
             this.label9.Size = new System.Drawing.Size(62, 21);
             this.label9.TabIndex = 17;
             this.label9.Text = "Image:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel1
             // 
@@ -245,12 +249,45 @@
             this.panel1.Size = new System.Drawing.Size(129, 626);
             this.panel1.TabIndex = 18;
             // 
+            // groupBoxUploadImage
+            // 
+            this.groupBoxUploadImage.Controls.Add(this.textBoxFileName);
+            this.groupBoxUploadImage.Controls.Add(this.buttonBrowse);
+            this.groupBoxUploadImage.Location = new System.Drawing.Point(154, 493);
+            this.groupBoxUploadImage.Name = "groupBoxUploadImage";
+            this.groupBoxUploadImage.Size = new System.Drawing.Size(268, 61);
+            this.groupBoxUploadImage.TabIndex = 19;
+            this.groupBoxUploadImage.TabStop = false;
+            this.groupBoxUploadImage.Text = "Upload Image";
+            // 
+            // textBoxFileName
+            // 
+            this.textBoxFileName.Location = new System.Drawing.Point(6, 22);
+            this.textBoxFileName.Name = "textBoxFileName";
+            this.textBoxFileName.Size = new System.Drawing.Size(226, 23);
+            this.textBoxFileName.TabIndex = 1;
+            // 
+            // buttonBrowse
+            // 
+            this.buttonBrowse.Location = new System.Drawing.Point(238, 21);
+            this.buttonBrowse.Name = "buttonBrowse";
+            this.buttonBrowse.Size = new System.Drawing.Size(24, 24);
+            this.buttonBrowse.TabIndex = 0;
+            this.buttonBrowse.Text = "...";
+            this.buttonBrowse.UseVisualStyleBackColor = true;
+            this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
+            // 
+            // openFileDialogUploadImage
+            // 
+            this.openFileDialogUploadImage.FileName = "openFileDialogUploadImage";
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(363, 626);
+            this.ClientSize = new System.Drawing.Size(434, 626);
+            this.Controls.Add(this.groupBoxUploadImage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.InstructionsBox);
@@ -272,6 +309,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBoxUploadImage.ResumeLayout(false);
+            this.groupBoxUploadImage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +336,9 @@
         private Button CancelBtn;
         private Label label9;
         private Panel panel1;
+        private GroupBox groupBoxUploadImage;
+        private Button buttonBrowse;
+        private OpenFileDialog openFileDialogUploadImage;
+        private TextBox textBoxFileName;
     }
 }
