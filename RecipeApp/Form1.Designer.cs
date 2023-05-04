@@ -115,7 +115,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(-1, 201);
+            this.button1.Location = new System.Drawing.Point(-1, 156);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 50);
             this.button1.TabIndex = 7;
@@ -126,10 +126,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(53, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 340);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(202, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -140,7 +140,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(-1, 313);
+            this.button3.Location = new System.Drawing.Point(-1, 268);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 50);
             this.button3.TabIndex = 9;
@@ -153,7 +153,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(53, 79);
+            this.label1.Location = new System.Drawing.Point(53, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 40);
             this.label1.TabIndex = 0;
@@ -168,7 +168,7 @@
             this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add.ForeColor = System.Drawing.SystemColors.Control;
-            this.Add.Location = new System.Drawing.Point(-1, 145);
+            this.Add.Location = new System.Drawing.Point(-1, 100);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(222, 50);
             this.Add.TabIndex = 5;
@@ -183,7 +183,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(0, 257);
+            this.button2.Location = new System.Drawing.Point(0, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(222, 50);
             this.button2.TabIndex = 8;
