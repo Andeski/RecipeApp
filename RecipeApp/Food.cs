@@ -12,8 +12,8 @@ namespace RecipeApp
         public string type { get; set; }
         public string portions { get; set; }
         public string difficulty { get; set; }
-        public List<string> ingredients { get; set; }
-        public List<string> instructions { get; set; }
+        public string[] ingredients { get; set; }
+        public string[] instructions { get; set; }
         public string imagePath { get; set; }
     }
 }

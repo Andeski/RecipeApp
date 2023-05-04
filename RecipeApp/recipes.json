@@ -4,7 +4,7 @@
     "type": "Dinner",
     "portions": "4",
     "difficulty": "2",
-    "imagePath": "",
+    "imagePath": "RoastedChicken.jpg",
     "ingredients": [
       "1 whole chicken",
       "2 tbsp olive oil",
@@ -28,7 +28,7 @@
     "type": "Dinner",
     "portions": "6",
     "difficulty": "3",
-    "imagePath": "",
+    "imagePath": "BeefTacos.jpg",
     "ingredients": [
       "1 lb ground beef",
       "8 corn tortillas",
@@ -56,7 +56,7 @@
     "type": "Breakfast",
     "portions": "2",
     "difficulty": "1",
-    "imagePath": "",
+    "imagePath": "CapreseSalad.jpg",
     "ingredients": [
       "2 large tomatoes, sliced",
       "8 oz fresh mozzarella cheese, sliced",
@@ -79,7 +79,7 @@
     "type": "Lunch",
     "portions": "4",
     "difficulty": "1",
-    "imagePath": "",
+    "imagePath": "PestoPasta.jpg",
     "ingredients": [
       "8 oz pasta",
       "1/2 cup pesto sauce",
@@ -102,7 +102,7 @@
     "type": "Breakfast",
     "portions": "10",
     "difficulty": "2",
-    "imagePath": "",
+    "imagePath": "BananaPancakes.jpg",
     "ingredients": [
       "1 ripe banana, mashed",
       "1 egg",
@@ -128,7 +128,7 @@
     "type": "Breakfast",
     "portions": "4",
     "difficulty": "1",
-    "imagePath": "",
+    "imagePath": "BreakfastBurritos.jpg",
     "ingredients": [
       "4 large eggs",
       "1/4 cup milk",
@@ -155,7 +155,7 @@
     "type": "Snack",
     "portions": "1",
     "difficulty": "1",
-    "imagePath": "",
+    "imagePath": "AvocadoToast.jpg",
     "ingredients": [
       "2 slices whole wheat bread",
       "1 ripe avocado, mashed",
@@ -184,7 +184,7 @@
     "type": "Snack",
     "portions": "2",
     "difficulty": "3",
-    "imagePath": "",
+    "imagePath": "LoadedSweetPotatoFries.jpg",
     "ingredients": [
       "1 large sweet potato",
       "1 tbsp olive oil",
@@ -212,7 +212,7 @@
     "type": "Snack",
     "portions": "6",
     "difficulty": "1",
-    "imagePath": "",
+    "imagePath": "CapreseSkewers.jpg",
     "ingredients": [
       "1 pint cherry tomatoes",
       "8 oz fresh mozzarella, cut into bite-sized pieces",
@@ -233,7 +233,7 @@
     "type": "Lunch",
     "portions": "2",
     "difficulty": "1",
-    "imagePath": "",
+    "imagePath": "HummusAndVeggiePlate.jpg",
     "ingredients": [
       "1/2 cup hummus",
       "1/2 red bell pepper, sliced",
