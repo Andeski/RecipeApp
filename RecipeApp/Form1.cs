@@ -18,13 +18,19 @@ namespace RecipeApp
             //listView1.Columns.Add("Food Name"); //Jos poistaa koko paska hajoo :D (1/3)
         }
 
-        public void PrintRecipes()
+        public void InsertRecipes()
         {
             //read .json
             string path = Path.Combine(Application.StartupPath, "recipes.json");
             string json = File.ReadAllText(path);
-            List<Food> newFoods = new List<Food>();
+            //List<Food> newFoods = new List<Food>();
+            
             foods = JsonConvert.DeserializeObject<List<Food>>(json);
+        }
+
+        public void PrintRecipes()
+        {
+            InsertRecipes();
             ListViewItem item = null;
             //clear any useless items
             listView1.Items.Clear();
@@ -157,32 +163,27 @@ namespace RecipeApp
             {
                 var search = from a in foods
                              where a.name.ToUpper().Contains(searchable.ToUpper()) || a.type.ToLower().Contains(searchable.ToLower()) ||
-                            a.portions.Contains(searchable) || a.difficulty.Contains(searchable) ||
-                            a.ingredients.Contains(searchable) || a.instructions.Contains(searchable)
-                            select a;
+                             a.portions.Contains(searchable) || a.difficulty.Contains(searchable) ||
+                             a.ingredients.Contains(searchable) || a.instructions.Contains(searchable)
+                             select a;
+                
                 listView1.Items.Clear();
 
                 foreach (var i in search)
                 {
-                    
-                    listView1.Items.Add(i.name);
+                    var item = new ListViewItem(i.name);
+                    item.Font = new Font(item.Font, FontStyle.Regular);
+                    listView1.Items.Add(item);
+                    listView1.Font = new Font(listView1.Font, FontStyle.Regular);
                 }
             }
+            else
+                PrintRecipes();
         }
 
         private void AllRecipesBtn_Click(object sender, EventArgs e)
         {
             PrintRecipes();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
