@@ -36,6 +36,7 @@ namespace RecipeApp
                 //Asettaa tausta värin joka toiselle Reseptille...
                 jokaToine = jokaToine % 2;
                 jokaToine++;
+                if (i.imagePath == "") i.imagePath = "U235soppa.png";
                 Image img = Image.FromFile(imgPath + i.imagePath);
                 RecipeItem uC = new RecipeItem()
                 {
@@ -47,7 +48,7 @@ namespace RecipeApp
                 NewFLPanel.Controls.Add(uC);
                 if (jokaToine != 1)
                 {
-                    uC.BackColor = Color.DarkOliveGreen;
+                    uC.BackColor = Color.YellowGreen;
                 }
 
             }
