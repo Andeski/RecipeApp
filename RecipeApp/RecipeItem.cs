@@ -42,7 +42,7 @@ namespace RecipeApp
             RecipeDetailsForm recipeDetailsForm = new RecipeDetailsForm();
             recipeDetailsForm.StartPosition = FormStartPosition.CenterParent;
             recipeDetailsForm.Show();
-            recipeDetailsForm.doStuff(food);
+            recipeDetailsForm.DoStuff(food);
         }
     }
 }
