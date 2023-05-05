@@ -40,17 +40,19 @@
             // instructionsCheckBoxList
             // 
             this.instructionsCheckBoxList.FormattingEnabled = true;
-            this.instructionsCheckBoxList.Location = new System.Drawing.Point(0, 265);
+            this.instructionsCheckBoxList.Location = new System.Drawing.Point(12, 352);
+            this.instructionsCheckBoxList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.instructionsCheckBoxList.Name = "instructionsCheckBoxList";
-            this.instructionsCheckBoxList.Size = new System.Drawing.Size(585, 274);
+            this.instructionsCheckBoxList.Size = new System.Drawing.Size(643, 356);
             this.instructionsCheckBoxList.TabIndex = 0;
             // 
             // ingredientsCheckBoxList
             // 
             this.ingredientsCheckBoxList.FormattingEnabled = true;
-            this.ingredientsCheckBoxList.Location = new System.Drawing.Point(0, 12);
+            this.ingredientsCheckBoxList.Location = new System.Drawing.Point(12, 16);
+            this.ingredientsCheckBoxList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ingredientsCheckBoxList.Name = "ingredientsCheckBoxList";
-            this.ingredientsCheckBoxList.Size = new System.Drawing.Size(585, 166);
+            this.ingredientsCheckBoxList.Size = new System.Drawing.Size(643, 202);
             this.ingredientsCheckBoxList.TabIndex = 1;
             // 
             // listView1
@@ -58,12 +60,13 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listView1.Location = new System.Drawing.Point(0, 184);
+            this.listView1.Location = new System.Drawing.Point(12, 236);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(585, 75);
+            this.listView1.Size = new System.Drawing.Size(643, 99);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.View = System.Windows.Forms.View.Tile;
             // 
             // columnHeader1
             // 
@@ -77,21 +80,24 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 545);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 727);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(585, 304);
+            this.pictureBox1.Size = new System.Drawing.Size(669, 405);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // RecipeDetailsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 861);
+            this.BackColor = System.Drawing.Color.YellowGreen;
+            this.ClientSize = new System.Drawing.Size(667, 1055);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.ingredientsCheckBoxList);
             this.Controls.Add(this.instructionsCheckBoxList);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RecipeDetailsForm";
             this.Text = "RecipeDetailsForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
