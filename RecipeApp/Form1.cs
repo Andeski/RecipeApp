@@ -82,7 +82,7 @@ namespace RecipeApp
                 //detailsForm.Show();
                 RecipeDetailsForm recipeDetailsForm = new RecipeDetailsForm();
                 recipeDetailsForm.Show();
-                recipeDetailsForm.doStuff(food);
+                recipeDetailsForm.DoStuff(food);
             }
         }
 

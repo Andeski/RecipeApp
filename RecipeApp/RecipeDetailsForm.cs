@@ -17,11 +17,22 @@ namespace RecipeApp
             InitializeComponent();
         }
 
-        public void doStuff(Food food)
+        public void DoStuff(Food food)
         {
+            ListViewItem portions = new ListViewItem("Portions");
+            portions.SubItems.Add(food.portions);
+            listView1.Items.Add(portions);
+            ListViewItem difficulty = new ListViewItem("Difficulty");
+            difficulty.SubItems.Add(food.difficulty);
+            listView1.Items.Add(difficulty);
+
+            foreach (var item in food.ingredients)
+            {
+                ingredientsCheckBoxList.Items.Add(item);
+            }
             foreach (var item in food.instructions)
             {
-                checkedListBox1.Items.Add(item);
+                instructionsCheckBoxList.Items.Add(item);
             }
         }
     }
