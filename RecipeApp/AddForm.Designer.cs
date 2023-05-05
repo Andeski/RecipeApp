@@ -28,252 +28,305 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.NameBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TypeBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PortionsBox = new System.Windows.Forms.NumericUpDown();
-            this.DifficultyBox = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.IngredientBox = new System.Windows.Forms.TextBox();
-            this.InstructionsBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.AddBtn = new System.Windows.Forms.Button();
-            this.CancelBtn = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.PortionsBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            NameBox = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            TypeBox = new TextBox();
+            label4 = new Label();
+            PortionsBox = new NumericUpDown();
+            DifficultyBox = new NumericUpDown();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            IngredientBox = new TextBox();
+            InstructionsBox = new TextBox();
+            label8 = new Label();
+            AddBtn = new Button();
+            CancelBtn = new Button();
+            label9 = new Label();
+            panel1 = new Panel();
+            label11 = new Label();
+            label10 = new Label();
+            groupBoxUploadImage = new GroupBox();
+            textBoxFileName = new TextBox();
+            buttonBrowse = new Button();
+            openFileDialogUploadImage = new OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)PortionsBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DifficultyBox).BeginInit();
+            panel1.SuspendLayout();
+            groupBoxUploadImage.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(168, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Add your own recipe";
+            label1.AutoSize = true;
+            label1.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(202, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(168, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Add your own recipe";
             // 
             // NameBox
             // 
-            this.NameBox.Location = new System.Drawing.Point(151, 51);
-            this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(200, 23);
-            this.NameBox.TabIndex = 1;
+            NameBox.Location = new Point(151, 51);
+            NameBox.Name = "NameBox";
+            NameBox.Size = new Size(271, 23);
+            NameBox.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Name:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(73, 49);
+            label2.Name = "label2";
+            label2.Size = new Size(69, 25);
+            label2.TabIndex = 2;
+            label2.Text = "Name:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 21);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Type:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(83, 78);
+            label3.Name = "label3";
+            label3.Size = new Size(59, 25);
+            label3.TabIndex = 4;
+            label3.Text = "Type:";
             // 
             // TypeBox
             // 
-            this.TypeBox.Location = new System.Drawing.Point(151, 80);
-            this.TypeBox.Name = "TypeBox";
-            this.TypeBox.Size = new System.Drawing.Size(200, 23);
-            this.TypeBox.TabIndex = 3;
+            TypeBox.Location = new Point(151, 80);
+            TypeBox.Name = "TypeBox";
+            TypeBox.Size = new Size(271, 23);
+            TypeBox.TabIndex = 3;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 21);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Portions:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(49, 108);
+            label4.Name = "label4";
+            label4.Size = new Size(93, 25);
+            label4.TabIndex = 5;
+            label4.Text = "Portions:";
             // 
             // PortionsBox
             // 
-            this.PortionsBox.Location = new System.Drawing.Point(151, 108);
-            this.PortionsBox.Name = "PortionsBox";
-            this.PortionsBox.Size = new System.Drawing.Size(45, 23);
-            this.PortionsBox.TabIndex = 6;
+            PortionsBox.Location = new Point(151, 108);
+            PortionsBox.Name = "PortionsBox";
+            PortionsBox.Size = new Size(45, 23);
+            PortionsBox.TabIndex = 6;
             // 
             // DifficultyBox
             // 
-            this.DifficultyBox.Location = new System.Drawing.Point(151, 138);
-            this.DifficultyBox.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.DifficultyBox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.DifficultyBox.Name = "DifficultyBox";
-            this.DifficultyBox.Size = new System.Drawing.Size(45, 23);
-            this.DifficultyBox.TabIndex = 8;
-            this.DifficultyBox.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            DifficultyBox.Location = new Point(151, 138);
+            DifficultyBox.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
+            DifficultyBox.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            DifficultyBox.Name = "DifficultyBox";
+            DifficultyBox.Size = new Size(45, 23);
+            DifficultyBox.TabIndex = 8;
+            DifficultyBox.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 21);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Difficulty:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(44, 136);
+            label5.Name = "label5";
+            label5.Size = new Size(98, 25);
+            label5.TabIndex = 7;
+            label5.Text = "Difficulty:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(202, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 15);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "(1 easy - 3 difficult)";
+            label6.AutoSize = true;
+            label6.Location = new Point(202, 140);
+            label6.Name = "label6";
+            label6.Size = new Size(108, 15);
+            label6.TabIndex = 9;
+            label6.Text = "(1 easy - 3 difficult)";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 21);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Ingredients:";
+            label7.AutoSize = true;
+            label7.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(23, 162);
+            label7.Name = "label7";
+            label7.Size = new Size(119, 25);
+            label7.TabIndex = 11;
+            label7.Text = "Ingredients:";
             // 
             // IngredientBox
             // 
-            this.IngredientBox.Location = new System.Drawing.Point(151, 167);
-            this.IngredientBox.Multiline = true;
-            this.IngredientBox.Name = "IngredientBox";
-            this.IngredientBox.Size = new System.Drawing.Size(200, 154);
-            this.IngredientBox.TabIndex = 12;
+            IngredientBox.Location = new Point(151, 167);
+            IngredientBox.Multiline = true;
+            IngredientBox.Name = "IngredientBox";
+            IngredientBox.Size = new Size(271, 154);
+            IngredientBox.TabIndex = 12;
             // 
             // InstructionsBox
             // 
-            this.InstructionsBox.Location = new System.Drawing.Point(151, 327);
-            this.InstructionsBox.Multiline = true;
-            this.InstructionsBox.Name = "InstructionsBox";
-            this.InstructionsBox.Size = new System.Drawing.Size(200, 154);
-            this.InstructionsBox.TabIndex = 14;
+            InstructionsBox.Location = new Point(151, 327);
+            InstructionsBox.Multiline = true;
+            InstructionsBox.Name = "InstructionsBox";
+            InstructionsBox.Size = new Size(271, 154);
+            InstructionsBox.TabIndex = 14;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(12, 324);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 21);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Instructions:";
+            label8.AutoSize = true;
+            label8.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(19, 327);
+            label8.Name = "label8";
+            label8.Size = new Size(123, 25);
+            label8.TabIndex = 13;
+            label8.Text = "Instructions:";
             // 
             // AddBtn
             // 
-            this.AddBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddBtn.Location = new System.Drawing.Point(272, 576);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(79, 38);
-            this.AddBtn.TabIndex = 15;
-            this.AddBtn.Text = "Add";
-            this.AddBtn.UseVisualStyleBackColor = true;
-            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
+            AddBtn.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            AddBtn.Location = new Point(343, 576);
+            AddBtn.Name = "AddBtn";
+            AddBtn.Size = new Size(79, 38);
+            AddBtn.TabIndex = 15;
+            AddBtn.Text = "Add";
+            AddBtn.UseVisualStyleBackColor = true;
+            AddBtn.Click += AddBtn_Click;
             // 
             // CancelBtn
             // 
-            this.CancelBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CancelBtn.Location = new System.Drawing.Point(151, 576);
-            this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(79, 38);
-            this.CancelBtn.TabIndex = 16;
-            this.CancelBtn.Text = "Close";
-            this.CancelBtn.UseVisualStyleBackColor = true;
-            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
+            CancelBtn.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CancelBtn.Location = new Point(257, 576);
+            CancelBtn.Name = "CancelBtn";
+            CancelBtn.Size = new Size(79, 38);
+            CancelBtn.TabIndex = 16;
+            CancelBtn.Text = "Close";
+            CancelBtn.UseVisualStyleBackColor = true;
+            CancelBtn.Click += CancelBtn_Click;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(12, 494);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 21);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Image:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            label9.AutoSize = true;
+            label9.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(70, 510);
+            label9.Name = "label9";
+            label9.Size = new Size(72, 25);
+            label9.TabIndex = 17;
+            label9.Text = "Image:";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.YellowGreen;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 626);
-            this.panel1.TabIndex = 18;
+            panel1.BackColor = Color.YellowGreen;
+            panel1.Controls.Add(label11);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(label9);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(145, 626);
+            panel1.TabIndex = 18;
+            // 
+            // label11
+            // 
+            label11.BackColor = Color.DarkOliveGreen;
+            label11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(33, 352);
+            label11.Name = "label11";
+            label11.Size = new Size(112, 38);
+            label11.TabIndex = 19;
+            label11.Text = "Seperate lines with comma \",\"";
+            // 
+            // label10
+            // 
+            label10.BackColor = Color.DarkOliveGreen;
+            label10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(33, 187);
+            label10.Name = "label10";
+            label10.Size = new Size(112, 38);
+            label10.TabIndex = 18;
+            label10.Text = "Seperate lines with comma \",\"";
+            // 
+            // groupBoxUploadImage
+            // 
+            groupBoxUploadImage.Controls.Add(textBoxFileName);
+            groupBoxUploadImage.Controls.Add(buttonBrowse);
+            groupBoxUploadImage.Location = new Point(154, 493);
+            groupBoxUploadImage.Name = "groupBoxUploadImage";
+            groupBoxUploadImage.Size = new Size(268, 61);
+            groupBoxUploadImage.TabIndex = 19;
+            groupBoxUploadImage.TabStop = false;
+            groupBoxUploadImage.Text = "Upload Image";
+            // 
+            // textBoxFileName
+            // 
+            textBoxFileName.Location = new Point(6, 22);
+            textBoxFileName.Name = "textBoxFileName";
+            textBoxFileName.Size = new Size(226, 23);
+            textBoxFileName.TabIndex = 1;
+            // 
+            // buttonBrowse
+            // 
+            buttonBrowse.Location = new Point(238, 21);
+            buttonBrowse.Name = "buttonBrowse";
+            buttonBrowse.Size = new Size(24, 24);
+            buttonBrowse.TabIndex = 0;
+            buttonBrowse.Text = "...";
+            buttonBrowse.UseVisualStyleBackColor = true;
+            buttonBrowse.Click += buttonBrowse_Click;
+            // 
+            // openFileDialogUploadImage
+            // 
+            openFileDialogUploadImage.FileName = "openFileDialogUploadImage";
             // 
             // AddForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(363, 626);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.CancelBtn);
-            this.Controls.Add(this.InstructionsBox);
-            this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.IngredientBox);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.DifficultyBox);
-            this.Controls.Add(this.PortionsBox);
-            this.Controls.Add(this.TypeBox);
-            this.Controls.Add(this.NameBox);
-            this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
-            this.Name = "AddForm";
-            this.ShowIcon = false;
-            this.Text = "New recipe";
-            this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.PortionsBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DifficultyBox)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(434, 626);
+            Controls.Add(groupBoxUploadImage);
+            Controls.Add(panel1);
+            Controls.Add(CancelBtn);
+            Controls.Add(InstructionsBox);
+            Controls.Add(AddBtn);
+            Controls.Add(IngredientBox);
+            Controls.Add(label6);
+            Controls.Add(DifficultyBox);
+            Controls.Add(PortionsBox);
+            Controls.Add(TypeBox);
+            Controls.Add(NameBox);
+            Controls.Add(label1);
+            MaximizeBox = false;
+            Name = "AddForm";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "New recipe";
+            TopMost = true;
+            ((System.ComponentModel.ISupportInitialize)PortionsBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DifficultyBox).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupBoxUploadImage.ResumeLayout(false);
+            groupBoxUploadImage.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -296,5 +349,11 @@
         private Button CancelBtn;
         private Label label9;
         private Panel panel1;
+        private GroupBox groupBoxUploadImage;
+        private Button buttonBrowse;
+        private OpenFileDialog openFileDialogUploadImage;
+        private TextBox textBoxFileName;
+        private Label label10;
+        private Label label11;
     }
 }
