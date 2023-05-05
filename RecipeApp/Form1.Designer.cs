@@ -90,10 +90,10 @@
             // 
             // txtRecipeName
             // 
-            this.txtRecipeName.Location = new System.Drawing.Point(44, 3);
+            this.txtRecipeName.Location = new System.Drawing.Point(11, 3);
             this.txtRecipeName.Name = "txtRecipeName";
             this.txtRecipeName.PlaceholderText = "Find a recipe...";
-            this.txtRecipeName.Size = new System.Drawing.Size(381, 23);
+            this.txtRecipeName.Size = new System.Drawing.Size(414, 23);
             this.txtRecipeName.TabIndex = 2;
             // 
             // panel3
