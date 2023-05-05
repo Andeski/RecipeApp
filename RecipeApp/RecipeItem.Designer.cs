@@ -103,6 +103,8 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "RecipeItem";
             this.Size = new System.Drawing.Size(511, 152);
+            this.Load += new System.EventHandler(this.RecipeItem_Load);
+            this.Click += new System.EventHandler(this.RecipeItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
