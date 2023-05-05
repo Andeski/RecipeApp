@@ -18,9 +18,11 @@ namespace RecipeApp
         //joo
         public string filePath = Path.Combine(Application.StartupPath, "recipes.json");
         public int newImageName = 0;
+        public string defaultImage = @"Resources\BananaPancakes.jpg";
         public AddForm()
         {
             InitializeComponent();
+            openFileDialogUploadImage.FileName = defaultImage;
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
@@ -49,6 +51,20 @@ namespace RecipeApp
                 //instructions = new List<string> { InstructionsBox.Text },
                 imagePath = Path.GetFileName(textBoxFileName.Text),
             };
+
+            //if (newRecipe.imagePath == "")
+            //{
+            //    newRecipe = new Food()
+            //    {
+            //        name = NameBox.Text,
+            //        type = TypeBox.Text,
+            //        portions = PortionsBox.Value.ToString(),
+            //        difficulty = DifficultyBox.Value.ToString(),
+            //        ingredients = IngredientArray,
+            //        instructions = InstructionsArray,
+            //        imagePath = defaultImage
+            //    };
+            //}
 
             list.Add(newRecipe);
 
@@ -87,7 +103,16 @@ namespace RecipeApp
             string fileName = Path.GetFileName(openFileDialogUploadImage.FileName);
             string folderPath = Path.Combine(Application.StartupPath + @"Resources\");
             string curFilePath = openFileDialogUploadImage.FileName;
+            //if (fileName == "openFileDialogUploadImage")
+            //{
+            //    fileName = defaultImage;
+            //    curFilePath = folderPath;
+            //}
             string copiedFilePath = folderPath + fileName;
+            //if (!(curFilePath == copiedFilePath))
+            //{
+                
+            //}
             File.Copy(curFilePath, copiedFilePath, true);
         }
 
